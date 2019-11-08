@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'courseProject';
+  // true means recipe, false means shopping list
+  display = true;
+
+  onRecipeDisplay(status: boolean) {
+    this.display = status;
+  }
 }
