@@ -21,9 +21,4 @@ export class RecipesComponent implements OnInit {
       }
     );
   }
-
-  showRecipeDetail(recipe: { name: string, description: string, imagePath: string }) {
-    this.recipeDetail = recipe;
-  }
-
 }
